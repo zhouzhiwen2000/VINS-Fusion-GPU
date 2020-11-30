@@ -44,11 +44,11 @@ sudo apt-get install ros-melodic-tf ros-melodic-image-transport
 
 Clone the repository and catkin_make:
 ```
-    cd ~/catkin_ws/src
-    git clone https://github.com/IOdissey/VINS-Fusion-GPU.git
-    cd ../
-    catkin_make
-    source ~/catkin_ws/devel/setup.bash
+cd ~/catkin_ws/src
+git clone https://github.com/IOdissey/VINS-Fusion-GPU.git
+cd ../
+catkin_make
+source ~/catkin_ws/devel/setup.bash
 ```
 
 
