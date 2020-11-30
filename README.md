@@ -1,7 +1,33 @@
 # About
 This is fork from [VINS-Fusion-gpu](https://github.com/pjrambo/VINS-Fusion-gpu) for opencv 4 version (and some fix).
+
 VINS-Fusion-gpu is a version of [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion) with GPU acceleration.
 
+
+# Dependencies
+- [Ceres Solver](http://ceres-solver.org/installation.html)
+- [ROS](http://wiki.ros.org/ROS/Installation)
+
+
+# Ceres Solver
+
+[Download](http://ceres-solver.org/ceres-solver-1.14.0.tar.gz) ceres. Test it on ceres-solver-1.14.
+
+#### Dependencies
+
+```
+sudo apt-get install -y libgoogle-glog-dev libatlas-base-dev libsuitesparse-dev
+```
+
+#### Build
+```
+mkdir ceres-build
+cd ceres-build
+cmake -D BUILD_TESTING=OFF \
+      -D BUILD_EXAMPLES=OFF \
+      ../ceres-solver-1.14.0
+sudo make install
+```
 
 # OpenCV bridge
 This is require ROS and OpenCV bridge for OpenCV 4.
@@ -38,10 +64,12 @@ catkin_make
 # Build
 Build is same as VINS-Fusion-gpu and VINS-Fusion.
 
+#### Dependencies
 ```
 sudo apt-get install ros-melodic-tf ros-melodic-image-transport
 ```
 
+#### Build
 Clone the repository and catkin_make:
 ```
 cd ~/catkin_ws/src
