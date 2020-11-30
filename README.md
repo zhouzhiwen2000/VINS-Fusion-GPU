@@ -1,5 +1,5 @@
 # About
-This is fork from [VINS-Fusion-gpu](https://github.com/pjrambo/VINS-Fusion-gpu) for opencv 4 version (and some fix).
+This is fork from [VINS-Fusion-gpu](https://github.com/pjrambo/VINS-Fusion-gpu) for OpenCV 4 (and some fix).
 
 VINS-Fusion-gpu is a version of [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion) with GPU acceleration.
 
