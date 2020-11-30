@@ -50,6 +50,8 @@ int MIN_DIST;
 double F_THRESHOLD;
 int SHOW_TRACK;
 int FLOW_BACK;
+int LK_SIZE;
+int LK_N;
 
 
 template <typename T>
@@ -91,6 +93,14 @@ void readParameters(std::string config_file)
     F_THRESHOLD = fsSettings["F_threshold"];
     SHOW_TRACK = fsSettings["show_track"];
     FLOW_BACK = fsSettings["flow_back"];
+    if (fsSettings["lk_size"].empty())
+        LK_SIZE = 21;
+    else
+        LK_SIZE = fsSettings["lk_size"];
+    if (fsSettings["lk_n"].empty())
+        LK_N = 3;
+    else
+        LK_N = fsSettings["lk_n"];
 
     MULTIPLE_THREAD = fsSettings["multiple_thread"];
 
