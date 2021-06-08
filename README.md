@@ -7,6 +7,7 @@ VINS-Fusion-gpu is a version of [VINS-Fusion](https://github.com/HKUST-Aerial-Ro
 # Dependencies
 - [Ceres Solver](http://ceres-solver.org/installation.html)
 - [ROS](http://wiki.ros.org/ROS/Installation)
+- [OpenCV bridge](https://github.com/ros-perception/vision_opencv)
 
 
 # Ceres Solver
