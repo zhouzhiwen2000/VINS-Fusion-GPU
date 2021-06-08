@@ -11,7 +11,9 @@ VINS-Fusion-gpu is a version of [VINS-Fusion](https://github.com/HKUST-Aerial-Ro
 
 # Ceres Solver
 
-[Download](http://ceres-solver.org/ceres-solver-1.14.0.tar.gz) ceres. Test it on ceres-solver-1.14.
+[Installation](http://ceres-solver.org/installation.html).
+
+[Download](http://ceres-solver.org/ceres-solver-2.0.0.tar.gz) latest stable release. Test it on ceres-solver-1.14 and ceres-solver-2.0.
 
 #### Dependencies
 
@@ -25,7 +27,7 @@ mkdir ceres-build
 cd ceres-build
 cmake -D BUILD_TESTING=OFF \
       -D BUILD_EXAMPLES=OFF \
-      ../ceres-solver-1.14.0
+      ../ceres-solver-2.0.0
 sudo make install
 ```
 
@@ -45,7 +47,7 @@ nano vision_opencv/cv_bridge/CMakeLists.txt
 find_package(Boost REQUIRED python37) -> find_package(Boost REQUIRED python3)
 ```
 
-In module.hpp add define NUMPY_IMPORT_ARRAY_RETVAL:
+In module.hpp add define NUMPY_IMPORT_ARRAY_RETVAL (if necessary):
 ```
 nano vision_opencv/cv_bridge/src/module.hpp
 ```
@@ -62,7 +64,7 @@ catkin_make
 
 
 # Build
-Build is same as VINS-Fusion-gpu and VINS-Fusion.
+Build is same as [VINS-Fusion-gpu](https://github.com/pjrambo/VINS-Fusion-gpu#2-build-vins-fusion) and [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion#2-build-vins-fusion).
 
 #### Dependencies
 ```
