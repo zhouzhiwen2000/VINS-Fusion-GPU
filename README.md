@@ -111,6 +111,6 @@ use_gpu_acc_flow: 1
 
 There are two parameters for config OpticalFlowPyrLK (pyramid level and window size):
 ```
-lk_n = 3
-lk_size = 21
+lk_n: 3
+lk_size: 21
 ```
